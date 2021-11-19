@@ -4,6 +4,13 @@ and I, we chose to build upon that along with ESPHome.
 
 You can follow along here to build your own.
 
+- [Inspiration](#inspiration)
+- [Setup](#setup)
+- [Flash Your ESP32](#flash-your-esp32)
+- [The Build](#the-build)
+- [Wiring Diagrams](#wiring-diagrams)
+- [Home Assistant](#home-assistant)
+
 ![Clock Movement](images/movement.gif)
 
 ## Inspiration
@@ -13,7 +20,9 @@ For this project, I drew inspiration from the following similar projects
 1. [Magic Clock](https://github.com/brgerig/Magic-Clock): Most of the 3D print files for the assembly were used and/or remixed from here.
 2. [Printable Props](https://printableprops.jimdo.com/en/harry-potter/weasley-clock/): Pascal Böcker graciously shared the STLs for the clock hands with me.
 
-## Parts
+## Setup
+
+### Parts
 
 | Part                                                   | Quantity    | Price       | My Source     |
 |--------------------------------------------------------|-------------|-------------|---------------|
@@ -35,7 +44,7 @@ For this project, I drew inspiration from the following similar projects
 | Old Clock Body (Mine was a Regulator 1114c)            | 1           | $25-$35     | Facebook      |
 | **Total**                                              |             | **< $100**  |               |
 
-## 3D Printed Parts
+### 3D Printed Parts
 
 | Part                                                             | Quantity |
 |------------------------------------------------------------------|----------|
@@ -49,7 +58,7 @@ For this project, I drew inspiration from the following similar projects
 | [Spur Gear 7/32][16]                                             | 1        |
 | Clock Hands (not mine to share)                                  | 4        |
 
-## Tools & Supplies
+### Tools & Supplies
 
 - Phillips Screwdriver
 - Exacto Knife
@@ -64,7 +73,7 @@ For this project, I drew inspiration from the following similar projects
 - Soldering Iron
 - (optional) Bench Grinder
 
-## Software
+### Software
 
 The SVGs in the [graphics folder](https://github.com/hunterjm/location-clock/tree/main/graphics) were created in Inkscape and are editable to change your locations and names. The `names.svg` file has a hidden layer with a to-scale copy of the clock hands I printed for alignment.
 
