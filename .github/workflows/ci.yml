@@ -40,11 +40,11 @@ jobs:
       - uses: actions/download-artifact@master
         with:
           name: firmware
-          path: ./static/firmware
+          path: ./static/firmware/location-clock
 
       - name: Create manifest.json
         run: |
-          jq -s '{"name": "Location Clock", "version": "${{ needs.build.outputs.esphome-version }}", "home_assistant_domain": "esphome", "new_install_skip_erase": false, "builds":.}' ./static/firmware/manifest.json > ./static/firmware/install_manifest.json
+          jq -s '{"name": "Location Clock", "version": "${{ needs.build.outputs.esphome-version }}", "home_assistant_domain": "esphome", "new_install_skip_erase": false, "builds":.}' ./static/firmware/location-clock/manifest.json > ./static/firmware/manifest.json
       
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.6
