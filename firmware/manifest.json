@@ -1,7 +1,21 @@
 {
-  "name": "Location Clock",
-  "version": "",
-  "home_assistant_domain": "esphome",
-  "new_install_skip_erase": false,
-  "builds": []
+  "chipFamily": "ESP32",
+  "parts": [
+    {
+      "path": "location-clock/firmware.bin",
+      "offset": 65536
+    },
+    {
+      "path": "location-clock/bootloader_dio_40m.bin",
+      "offset": 4096
+    },
+    {
+      "path": "location-clock/partitions.bin",
+      "offset": 32768
+    },
+    {
+      "path": "location-clock/boot_app0.bin",
+      "offset": 57344
+    }
+  ]
 }
