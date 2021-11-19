@@ -29,6 +29,9 @@ For this project, I drew inspiration from the following similar projects
 | #10-24 Nuts                                            | 24          | $2-$4       | Big Box Store |
 | Small Wood Screws                                      | 6           | $1-$2       | Big Box Store |
 | 1/2" MDF/Wood Block/Plywood/Scrap Wood                 | 1           | ?           | On Hand       |
+| White Spray Paint                                      | 1           | ?           | On Hand       |
+| Metallic Silver Spray Paint                            | 1           | ?           | On Hand       |
+| Super Glue & Wood Glue                                 | 1           | ?           | On Hand       |
 | Old Clock Body (Mine was a Regulator 1114c)            | 1           | $25-$35     | Facebook      |
 | **Total**                                              |             | **< $100**  |               |
 
@@ -45,6 +48,48 @@ For this project, I drew inspiration from the following similar projects
 | [Spur Gear 3/16][15]                                             | 1        |
 | [Spur Gear 7/32][16]                                             | 1        |
 | Clock Hands (not mine to share)                                  | 4        |
+
+## Tools & Supplies
+
+- Phillips Screwdriver
+- Exacto Knife
+- Super Glue
+- Wood Glue
+- Spray Paint (White & Metallic Silver)
+- Hand saw w/ metal cutting blade
+- Drill & bits
+- Pick (helps remove staples)
+- (optional) Bench Grinder
+
+## Software
+
+The SVGs in the [graphics folder](https://github.com/hunterjm/location-clock/tree/main/graphics) were created in Inkscape and are editable to change your locations and names. The `names.svg` file has a hidden layer with a to-scale copy of the clock hands I printed for alignment.
+
+## Wiring Diagrams
+
+### Breadboard
+![Breadboard Diagram](static/images/diagram_bb.png)
+
+### Schematic
+![Schematic Diagram](static/images/diagram_schem.png)
+
+## The Build
+
+Assembly of the control mechanism was the most difficult part of this project, and I did not take near enough pictures or notes of the process. That being said, a lot of it
+is pretty self explanitory, so I will give a general overview of the steps I took and some gotchas along the way.
+
+![Original Clock](static/images/original_clock.jpg)
+
+### Clock Tear Down
+
+1. 4 screws held the glass assembly of the clock face on from the inside of the body.
+2. The clock hands pull right off - they require some pressure.
+3. Remove the nut from the clock face, and the old time mechanism should come right out.
+4. The glass was held in with a plastic support held by two small screws. Remove the glass so it doesn't break. I also used a razor blade to scrape off the "REGULATOR" text from the glass.
+5. The face was held on with 4 L brackets on the side of the clock. I removed it for easier access to build the mechanism.
+5. The clock face was attached with some double sided tape and pulled right off.
+6. There was a pre-existing 1/2 block of wood in the clock body that was too small and needed to be removed. It was held on with 2 staples, but no glue. I used a pick to pull the staples out.
+![Clock Face](static/images/face.jpg)
 
 [1]: <https://www.amazon.com/dp/B0718T232Z>
 [2]: <https://www.amazon.com/dp/B015RQ97W8>
