@@ -6,6 +6,8 @@ and I, we chose to build upon that along with ESPHome.
 
 You can follow along here to build your own.
 
+![Clock Movement](static/images/movement.gif)
+
 ## Inspiration
 
 For this project, I drew inspiration from the following similar projects
@@ -60,19 +62,16 @@ For this project, I drew inspiration from the following similar projects
 - Wood saw
 - Drill & bits
 - Pick (helps remove staples)
+- Soldering Iron
 - (optional) Bench Grinder
 
 ## Software
 
 The SVGs in the [graphics folder](https://github.com/hunterjm/location-clock/tree/main/graphics) were created in Inkscape and are editable to change your locations and names. The `names.svg` file has a hidden layer with a to-scale copy of the clock hands I printed for alignment.
 
-## Wiring Diagrams
+## Flash Your ESP32
 
-### Breadboard
-![Breadboard Diagram](static/images/diagram_bb.png)
-
-### Schematic
-![Schematic Diagram](static/images/diagram_schem.png)
+Insert ESP Web Tools here.
 
 ## The Build
 
@@ -98,6 +97,15 @@ is pretty self explanitory, so I will give a general overview of the steps I too
 3. After the paint dried, I was able to apply the new face to the old aluminum one and trim it down with an exacto knife.
 ![Clock Face](static/images/face.jpg)
 
+### Clock Hands
+
+I am unable to provide the STL files for the hands at this time. I am working with the original author to see if he will let me share them with you all. Either way, the below steps were taken for the clock hands.
+
+1. Spray paint them Metallic Silver.
+2. Super Glue them to the transparent paper.
+3. Cut out the hands with an exacto knife.
+![Clock Hands](static/images/names.jpg)
+
 ### Motor Mechanism
 
 Here is where I didn't take nearly enough pictures, and for that I'm sorry!
@@ -113,6 +121,26 @@ Here is where I didn't take nearly enough pictures, and for that I'm sorry!
 9. Super glue the gear to one end of the aluminum rod and finess it into the mechanism so the gears are touching.
 10. Rinse and repeat for the next 2 rods.  **Read the next line before cutting the last rod!** It's OK if things feel tight and like they aren't lining up properly. Clearances are tight. Until your rods have preassure on all 4 sides from all 4 motors, you will probably have to push and prod and pull and curse.
 11. The last rod has a place to fit into the mounting bracket base, so it will be a little longer, and the gear won't be glued on to the end. Make sure you attach the bracket base and measure from the front of the clock!
+
+### Assembly
+
+1. Before re-attaching the clock face, find locations inside the clock body for all of your motor controllers and ESP32. I did not print a mount for my ESP, it's just hanging out back there.
+2. Wire up everything inside (except the motors, which are on the clock face). The wiring diagrams are below. The only soldering you will need is to make the power harness. The ESP32 board and each of the ULN2003 boards need 5V power.
+3. Re-insert the glass
+4. Attach the clock face, watch out for wires, and triple check nothing got unseated during handling.
+5. Plug in the motors. Which board you plug each motor into matters if you want to use the out of the box firmware for your ESP32! Check the diagram!
+6. Wire management
+7. Attach the hands to the face of the clock and align them all to the same location, probably "Home".
+8. Power it on and try moving each motor in the Home Assistant Developer Tools "Services" section.
+9. Troubleshoot and try again :)
+
+## Wiring Diagrams
+
+### Breadboard
+![Breadboard Diagram](static/images/diagram_bb.png)
+
+### Schematic
+![Schematic Diagram](static/images/diagram_schem.png)
 
 [1]: <https://www.amazon.com/dp/B0718T232Z>
 [2]: <https://www.amazon.com/dp/B015RQ97W8>
