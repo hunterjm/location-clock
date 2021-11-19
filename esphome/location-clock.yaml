@@ -1,7 +1,11 @@
-esphome:
+substitutions:
   name: location-clock
+
+esphome:
+  name: "${name}"
   platform: ESP32
   board: nodemcu-32s
+  name_add_mac_suffix: true
   project:
     name: hunterjm.location_clock
     version: "1.0"
