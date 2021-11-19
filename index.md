@@ -52,14 +52,8 @@ For this project, I drew inspiration from the following similar projects
 | [Mounting Bracket Base][8]                                       | 1        |
 | Mounting Bracket Top ([clean][9] or [threaded][10] & [plug][11]) | 1        |
 | [Spur Gear 5mm][12]                                              | 4        |
-| [Spur Gear 1/8][13]                                              | 1        |
-| [Spur Gear 5/32][14]                                             | 1        |
-| [Spur Gear 3/16][15]                                             | 1        |
-| [Spur Gear 7/32][16]                                             | 1        |
-| [Clock Hand 1][17]                                               | 1        |
-| [Clock Hand 2][18]                                               | 1        |
-| [Clock Hand 3][19]                                               | 1        |
-| [Clock Hand 4][20]                                               | 1        |
+| Spur Gear ([1/8][13], [5/32][14], [3/16][15], [7/32][16])        | 1 each   |
+| Clock Hand ([1][17], [2][18], [3][19], [4][20])                  | 1 each   |
 
 ### Tools & Supplies
 
