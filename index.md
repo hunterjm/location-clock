@@ -56,7 +56,10 @@ For this project, I drew inspiration from the following similar projects
 | [Spur Gear 5/32][14]                                             | 1        |
 | [Spur Gear 3/16][15]                                             | 1        |
 | [Spur Gear 7/32][16]                                             | 1        |
-| Clock Hands (not mine to share)                                  | 4        |
+| [Clock Hand 1][17]                                               | 1        |
+| [Clock Hand 2][18]                                               | 1        |
+| [Clock Hand 3][19]                                               | 1        |
+| [Clock Hand 4][20]                                               | 1        |
 
 ### Tools & Supplies
 
@@ -111,7 +114,7 @@ is pretty self explanitory, so I will give a general overview of the steps I too
 
 ### Clock Hands
 
-I am unable to provide the STL files for the hands at this time. I am working with the original author to see if he will let me share them with you all. Either way, the below steps were taken for the clock hands.
+The [clock hands](#3d-printed-parts) are reproductions of Arthur, Molly, Ron, and Bill's hands from the film made by Pascal Böcker of [Printable Props](https://printableprops.jimdo.com/en/harry-potter/weasley-clock/). I scaled down his originals to fit in my clock face and resized the holes for the aluminum rods I am using.
 
 1. Spray paint them Metallic Silver.
 2. Super Glue them to the transparent paper.
@@ -231,3 +234,7 @@ The [blueprint](https://github.com/hunterjm/location-clock/blob/main/homeassista
 [14]: <https://github.com/hunterjm/location-clock/blob/main/stl_files/spur-gear-5-32nd.stl>
 [15]: <https://github.com/hunterjm/location-clock/blob/main/stl_files/spur-gear-3-16th.stl>
 [16]: <https://github.com/hunterjm/location-clock/blob/main/stl_files/spur-gear-7-32.stl>
+[17]: <https://github.com/hunterjm/location-clock/blob/main/stl_files/hand-1-1-8th.stl>
+[18]: <https://github.com/hunterjm/location-clock/blob/main/stl_files/hand-2-5-32nd.stl>
+[19]: <https://github.com/hunterjm/location-clock/blob/main/stl_files/hand-3-3-16th.stl>
+[20]: <https://github.com/hunterjm/location-clock/blob/main/stl_files/hand-4-7-32nd.stl>
