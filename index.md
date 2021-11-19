@@ -147,11 +147,11 @@ Here is where I didn't take nearly enough pictures, and for that I'm sorry!
 
 ### Zones
 
-Home Assistant Zones are the star of the show here. Set up as many Zones as you can for the locations on your clock face.  Don't worry now if the Zone shares the same name as the location on the clock. Not everyone in the household will work at the same place or go to the same school for instance. Name them what they are, we will account for that in the template sensor we create later.
+Home Assistant [Zones](https://www.home-assistant.io/integrations/zone/) are the star of the show here. Set up as many Zones as you can for the locations on your clock face.  Don't worry now if the Zone shares the same name as the location on the clock. Not everyone in the household will work at the same place or go to the same school for instance. Name them what they are, we will account for that in the template sensor we create later.
 
 ### Template Sensors
 
-To map Zones to locations on the clock and implement some additional logic for locations like "Traveling", "Lost", and "Vacation" we will be using a Template Sensor in Home Assistant. You can see what mine looks like below:
+To map Zones to locations on the clock and implement some additional logic for locations like "Traveling", "Lost", and "Vacation" we will be using a [Template Sensor](https://www.home-assistant.io/integrations/template/) in Home Assistant. You can see what mine looks like below:
 
 ```yaml
 sensor:
@@ -189,6 +189,10 @@ To better understand the logic here, I have a Zone for "Library". That is where 
 2. Lost: Away for more than 24 hours excluding "Vacation".
 3. Traveling: Away but iPhone reports activity as "Automotive", excluding "Vacation" and "Lost".
 4. Away: Simply not home when none of the above special states are met.
+
+### Children
+
+The children aren't old enough for phones yet, and cheap GPS devices targeted for Kids are [notoriously insecure](https://www.troyhunt.com/how-to-track-your-kids-and-other-peoples-kids-with-the-tictoctrack-watch/). Because of this, I am simply using an [Input Select](https://www.home-assistant.io/integrations/input_select/) with all of the clock face locations for the kids hands currently. You can then create automations to automatically change them under certian conditions. For example, if my wife or I enter the Zone for a child's school in the morning, we can place them at "School". Same thing with picking them up in the afternoon. When they get old enough, this can all be automated through the Mobile App like it is for the adults.
 
 ### Blueprint
 
