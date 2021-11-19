@@ -4,7 +4,7 @@ and I, we chose to build upon that along with ESPHome.
 
 You can follow along here to build your own.
 
-![Clock Movement](static/images/movement.gif)
+![Clock Movement](images/movement.gif)
 
 ## Inspiration
 
@@ -70,14 +70,18 @@ The SVGs in the [graphics folder](https://github.com/hunterjm/location-clock/tre
 
 ## Flash Your ESP32
 
-Insert ESP Web Tools here. Until then, the configuration [can be found here](https://github.com/hunterjm/location-clock/blob/main/esphome/location-clock.yaml).
+The ESPHome configuration [can be found here](https://github.com/hunterjm/location-clock/blob/main/esphome/location-clock.yaml). With ESP Web Tools, you can flash and configure your ESP32 directly from a supported browser with the compiled firmware by plugging it in and clicking the button below.
+
+<esp-web-install-button manifest="./firmware/manifest.json"></esp-web-install-button>
+
+<script type="module" src="https://unpkg.com/esp-web-tools@5.2.0/dist/web/install-button.js?module"></script>
 
 ## The Build
 
 Assembly of the control mechanism was the most difficult part of this project, and I did not take near enough pictures or notes of the process. That being said, a lot of it
 is pretty self explanitory, so I will give a general overview of the steps I took and some gotchas along the way.
 
-![Original Clock](static/images/original_clock.jpg)
+![Original Clock](images/original_clock.jpg)
 
 ### Clock Tear Down
 
@@ -94,7 +98,7 @@ is pretty self explanitory, so I will give a general overview of the steps I too
 1. I spray painted over the aluminum clock face with flat white paint to cover the old numbers.
 2. I created a [new face](https://github.com/hunterjm/location-clock/blob/main/graphics/clock_face.svg) in Inkscape and printed it on the vinyl sticker paper.
 3. After the paint dried, I was able to apply the new face to the old aluminum one and trim it down with an exacto knife.
-![Clock Face](static/images/face.jpg)
+![Clock Face](images/face.jpg)
 
 ### Clock Hands
 
@@ -103,7 +107,7 @@ I am unable to provide the STL files for the hands at this time. I am working wi
 1. Spray paint them Metallic Silver.
 2. Super Glue them to the transparent paper.
 3. Cut out the hands with an exacto knife.
-![Clock Hands](static/images/names.jpg)
+![Clock Hands](images/names.jpg)
 
 ### Motor Mechanism
 
@@ -120,7 +124,7 @@ Here is where I didn't take nearly enough pictures, and for that I'm sorry!
 9. Super glue the gear to one end of the aluminum rod and finess it into the mechanism so the gears are touching.
 10. Rinse and repeat for the next 2 rods.  **Read the next line before cutting the last rod!** It's OK if things feel tight and like they aren't lining up properly. Clearances are tight. Until your rods have preassure on all 4 sides from all 4 motors, you will probably have to push and prod and pull and curse.
 11. The last rod has a place to fit into the mounting bracket base, so it will be a little longer, and the gear won't be glued on to the end. Make sure you attach the bracket base and measure from the front of the clock!
-![Motors](static/images/motors.jpg)
+![Motors](images/motors.jpg)
 12. Wood glue the completed mechanism to the back of the clock face and clamp to let dry.
 
 ### Assembly
@@ -138,10 +142,10 @@ Here is where I didn't take nearly enough pictures, and for that I'm sorry!
 ## Wiring Diagrams
 
 ### Breadboard
-![Breadboard Diagram](static/images/diagram_bb.png)
+![Breadboard Diagram](images/diagram_bb.png)
 
 ### Schematic
-![Schematic Diagram](static/images/diagram_schem.png)
+![Schematic Diagram](images/diagram_schem.png)
 
 ## Home Assistant
 
