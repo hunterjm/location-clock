@@ -153,6 +153,7 @@ Home Assistant [Zones](https://www.home-assistant.io/integrations/zone/) are the
 
 To map Zones to locations on the clock and implement some additional logic for locations like "Traveling", "Lost", and "Vacation" we will be using a [Template Sensor](https://www.home-assistant.io/integrations/template/) in Home Assistant. You can see what mine looks like below:
 
+{% raw %}
 ```yaml
 sensor:
   - platform: template
@@ -183,6 +184,7 @@ sensor:
             {{ states('person.jason') }}
           {% endif %}
 ```
+{% endraw %}
 
 To better understand the logic here, I have a Zone for "Library". That is where my Wife works, but I do not. I want the "Away" logic to run when I am there. For my "Away" logic, there are 4 possible "Away" states:
 1. Vacation: Away, but > 80 km from home.
