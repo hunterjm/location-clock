@@ -1,6 +1,6 @@
 {
   "name": "Location Clock",
-  "version": "2021.11.1",
+  "version": "1.0.0",
   "home_assistant_domain": "esphome",
   "new_install_skip_erase": false,
   "builds": [
