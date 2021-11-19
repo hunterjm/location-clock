@@ -71,7 +71,7 @@ The SVGs in the [graphics folder](https://github.com/hunterjm/location-clock/tre
 
 ## Flash Your ESP32
 
-Insert ESP Web Tools here.
+Insert ESP Web Tools here. Until then, the configuration [can be found here](https://github.com/hunterjm/location-clock/blob/main/esphome/location-clock.yaml).
 
 ## The Build
 
@@ -141,6 +141,14 @@ Here is where I didn't take nearly enough pictures, and for that I'm sorry!
 
 ### Schematic
 ![Schematic Diagram](static/images/diagram_schem.png)
+
+## Home Assistant
+
+### Blueprint
+
+The [blueprint](https://github.com/hunterjm/location-clock/blob/main/homeassistant/blueprints/location-clock.yaml) is meant to create an automation to control each hand. It's just easier that way. Click the link below to import it!
+
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint_import.svg)](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2Fhunterjm%2Flocation-clock%2Fblob%2Fmain%2Fhomeassistant%2Fblueprints%2Flocation-clock.yaml)
 
 [1]: <https://www.amazon.com/dp/B0718T232Z>
 [2]: <https://www.amazon.com/dp/B015RQ97W8>
