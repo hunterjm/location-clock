@@ -78,7 +78,7 @@ The SVGs in the [graphics folder](https://github.com/hunterjm/location-clock/tre
 
 The ESPHome configuration [can be found here](https://github.com/hunterjm/location-clock/blob/main/esphome/location-clock.yaml). With ESP Web Tools, you can flash and configure your ESP32 directly from a supported browser with the compiled firmware by plugging it in and clicking the button below.
 
-<esp-web-install-button manifest="./firmware/install_manifest.json"></esp-web-install-button>
+<esp-web-install-button manifest="/firmware/manifest.json"></esp-web-install-button>
 
 <script type="module" src="https://unpkg.com/esp-web-tools@5.2.0/dist/web/install-button.js?module"></script>
 
