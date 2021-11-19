@@ -1,6 +1,4 @@
-# Location Clock
-
-Location Clock is inspired by a love of all things magical, and scientific. A combination of reading Harry Potter with my 8 year old and her "simple machines"
+A combination of reading Harry Potter with my 8 year old and her "simple machines"
 STEM lessons in school, we decided to embark on building our very own physical location clock. Already having Home Assistant setup and configured for my wife
 and I, we chose to build upon that along with ESPHome.
 
@@ -57,6 +55,7 @@ For this project, I drew inspiration from the following similar projects
 - Exacto Knife
 - Super Glue
 - Wood Glue
+- Wood Clamps
 - Spray Paint (White & Metallic Silver)
 - Hand saw w/ metal cutting blade
 - Wood saw
@@ -122,6 +121,7 @@ Here is where I didn't take nearly enough pictures, and for that I'm sorry!
 10. Rinse and repeat for the next 2 rods.  **Read the next line before cutting the last rod!** It's OK if things feel tight and like they aren't lining up properly. Clearances are tight. Until your rods have preassure on all 4 sides from all 4 motors, you will probably have to push and prod and pull and curse.
 11. The last rod has a place to fit into the mounting bracket base, so it will be a little longer, and the gear won't be glued on to the end. Make sure you attach the bracket base and measure from the front of the clock!
 ![Motors](static/images/motors.jpg)
+12. Wood glue the completed mechanism to the back of the clock face and clamp to let dry.
 
 ### Assembly
 
