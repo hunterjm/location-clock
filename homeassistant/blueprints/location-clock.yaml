@@ -1,0 +1,75 @@
+blueprint:
+  name: Location Clock Hand Control
+  description: |
+    ## Location Clock Hand Control
+
+    This blueprint is intended to help control the hands of https://github.com/hunterjm/location-clock. Most of the settings are self explanitory.
+
+    To determine your `Stepper Position Map`, take the number of steps it takes for your motor to make a full rotation and divide it by the number of locations on your clock face. Starting at 0, add that number for each additional location. See example below:
+
+    ```yaml
+    Home: 0
+    Church: 157
+    School: 315
+    Event: 472
+    Traveling: 630
+    Doctor: 787
+    Work: 945
+    Lesson: 1102
+    Parents: 1260
+    Friends: 1417
+    Vacation: 1575
+    Away: 1732
+    Lost: 1890
+    ```
+  domain: automation
+  input:
+    location_entity:
+      name: Location Entity
+      description: The presence entity to map for the clock hand.
+      selector:
+        entity:
+    reversed:
+      name: Reversed
+      description: Is the stepper motor moving counter clockwise when given a positive integer as a target?
+      selector:
+        boolean:
+    max_steps:
+      name: Max Steps
+      description: The number of steps it takes for your motor to do a full rotation.
+      default: 2048
+      selector:
+        number:
+          min: 0
+          max: 10000
+          mode: box
+    position_map:
+      name: Stepper Position Map
+      description: Location -> Stepper Position
+      selector:
+        object:
+    default_location:
+      name: Default Location
+      description: Where should the clock say you are if a state is not mapped above?
+    service:
+      name: Stepper Control Service
+      description: ESPHome stepper control service call to control this hand.
+
+mode: parallel
+
+trigger:
+  - platform: state
+    entity_id: !input location_entity
+variables:
+  location_entity: !input location_entity
+  reversed: !input reversed
+  max_steps: !input max_steps
+  position_map: !input position_map
+  default_location: !input default_location
+  service: !input service
+  target_location: "{{ trigger.to_state.state if trigger.to_state.state in position_map else default_location }}"
+  target_position: "{{ max_steps - position_map[target_location] if reversed else position_map[target_location] }}"
+action:
+  service: "{{ service }}"
+  data:
+    target: "{{ target_position }}"

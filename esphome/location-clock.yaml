@@ -1,0 +1,130 @@
+esphome:
+  name: location-clock
+  platform: ESP32
+  board: nodemcu-32s
+  project:
+    name: hunterjm.location_clock
+    version: "1.0"
+
+dashboard_import:
+  package_import_url: github://hunterjm/location-clock/esphome/location-clock.yaml@v1
+
+# Enable logging
+logger:
+
+# Allow OTA updates
+ota:
+
+# Allow provisioning Wi-Fi via serial
+improv_serial:
+
+# Sets up Bluetooth LE (Only on ESP32) to allow the user
+# to provision wifi credentials to the device.
+esp32_improv:
+  authorizer: none
+
+# Configure WiFi
+wifi:
+  # Set up a wifi access point
+  ap:
+    ssid: "Location Clock"
+
+# In combination with the `ap` this allows the user
+# to provision wifi credentials to the device via WiFi AP.
+captive_portal:
+
+# Enable Web Server
+web_server:
+
+# Enable Home Assistant API
+api:
+  services:
+    - service: home_hands
+      then:
+        - stepper.report_position:
+            id: hand_1
+            position: 0
+        - stepper.set_target:
+            id: hand_1
+            target: 0
+        - stepper.report_position:
+            id: hand_2
+            position: 0
+        - stepper.set_target:
+            id: hand_2
+            target: 0
+        - stepper.report_position:
+            id: hand_3
+            position: 0
+        - stepper.set_target:
+            id: hand_3
+            target: 0
+        - stepper.report_position:
+            id: hand_4
+            position: 0
+        - stepper.set_target:
+            id: hand_4
+            target: 0
+    - service: control_hand_1
+      variables:
+        target: int
+      then:
+        - stepper.set_target:
+            id: hand_1
+            target: !lambda 'return target;'
+    - service: control_hand_2
+      variables:
+        target: int
+      then:
+        - stepper.set_target:
+            id: hand_2
+            target: !lambda 'return target;'
+    - service: control_hand_3
+      variables:
+        target: int
+      then:
+        - stepper.set_target:
+            id: hand_3
+            target: !lambda 'return target;'
+    - service: control_hand_4
+      variables:
+        target: int
+      then:
+        - stepper.set_target:
+            id: hand_4
+            target: !lambda 'return target;'
+
+# Stepper Motors
+stepper:
+  - platform: uln2003
+    id: hand_1
+    pin_a: GPIO18
+    pin_b: GPIO5
+    pin_c: GPIO17
+    pin_d: GPIO16
+    sleep_when_done: true
+    max_speed: 250 steps/s
+  - platform: uln2003
+    id: hand_2
+    pin_a: GPIO23
+    pin_b: GPIO22
+    pin_c: GPIO21
+    pin_d: GPIO19
+    sleep_when_done: true
+    max_speed: 250 steps/s
+  - platform: uln2003
+    id: hand_3
+    pin_a: GPIO27
+    pin_b: GPIO14
+    pin_c: GPIO12
+    pin_d: GPIO13
+    sleep_when_done: true
+    max_speed: 250 steps/s
+  - platform: uln2003
+    id: hand_4
+    pin_a: GPIO32
+    pin_b: GPIO33
+    pin_c: GPIO25
+    pin_d: GPIO26
+    sleep_when_done: true
+    max_speed: 250 steps/s
