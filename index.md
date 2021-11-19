@@ -1,37 +1,64 @@
-## Welcome to GitHub Pages
+# Location Clock
 
-You can use the [editor on GitHub](https://github.com/hunterjm/location-clock/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Location Clock is inspired by a love of all things magical, and scientific. A combination of reading Harry Potter with my 8 year old and her "simple machines"
+STEM lessons in school, we decided to embark on building our very own physical location clock. Already having Home Assistant setup and configured for my wife
+and I, we chose to build upon that along with ESPHome.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+You can follow along here to build your own.
 
-### Markdown
+## Inspiration
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+For this project, I drew inspiration from the following similar projects
 
-```markdown
-Syntax highlighted code block
+1. [Magic Clock](https://github.com/brgerig/Magic-Clock): Most of the 3D print files for the assembly were used and/or remixed from here.
+2. [Printable Props](https://printableprops.jimdo.com/en/harry-potter/weasley-clock/): Pascal Böcker graciously shared the STLs for the clock hands with me.
 
-# Header 1
-## Header 2
-### Header 3
+## Parts
 
-- Bulleted
-- List
+| Part                                                   | Quantity    | Price       | My Source     |
+|--------------------------------------------------------|-------------|-------------|---------------|
+| [nodemcu-32s dev board (38 pin)][1]                    | 1           | $7-$12      | Amazon        |
+| [ULN2003 Board w/ Stepper Motor][2]                    | 4           | $10-$14     | Amazon        |
+| [Female to Female Jumper Wires][3]                     | ~26         | $5-7        | Amazon        |
+| [6V 2A AC/DC Adapter w/ Breakout][4]                   | 1           | $10-20      | Amazon        |
+| [Aluminum Telescopic Tubes][5] (1/8, 5/32, 3/16, 7/32) | 1 each size | $7-9        | Amazon        |
+| Transparent Paper Sheet                                | 1           | < $1        | On Hand       |
+| Transparent Vinyl Sticker Sheet                        | 1           | < $1        | On Hand       |
+| #10-24 x 3" Machine Screws                             | 4           | $2-$4       | Big Box Store |
+| #10-24 T-Nuts                                          | 4           | $1-$2       | Big Box Store |
+| #10-24 Nuts                                            | 24          | $2-$4       | Big Box Store |
+| Small Wood Screws                                      | 6           | $1-$2       | Big Box Store |
+| 1/2" MDF/Wood Block/Plywood/Scrap Wood                 | 1           | ?           | On Hand       |
+| Old Clock Body (Mine was a Regulator 1114c)            | 1           | $25-$35     | Facebook      |
+| **Total**                                              |             | **< $100**  |               |
 
-1. Numbered
-2. List
+## 3D Printed Parts
 
-**Bold** and _Italic_ and `Code` text
+| Part                                                             | Quantity |
+|------------------------------------------------------------------|----------|
+| ULN2003 dual case ([base][6], [cover][7])                        | 2        |
+| [Mounting Bracket Base][8]                                       | 1        |
+| Mounting Bracket Top ([clean][9] or [threaded][10] & [plug][11]) | 1        |
+| [Spur Gear 5mm][12]                                              | 4        |
+| [Spur Gear 1/8][13]                                              | 1        |
+| [Spur Gear 5/32][14]                                             | 1        |
+| [Spur Gear 3/16][15]                                             | 1        |
+| [Spur Gear 7/32][16]                                             | 1        |
+| Clock Hands (not mine to share)                                  | 4        |
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hunterjm/location-clock/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+[1]: <https://www.amazon.com/dp/B0718T232Z>
+[2]: <https://www.amazon.com/dp/B015RQ97W8>
+[3]: <https://www.amazon.com/dp/B01L5ULRUA>
+[4]: <https://www.amazon.com/dp/B08VWG1S1V>
+[5]: <https://www.amazon.com/dp/B07VS4823F>
+[6]: <https://github.com/hunterjm/location-clock/blob/main/stl_files/ULN2003-dual.stl>
+[7]: <https://github.com/hunterjm/location-clock/blob/main/stl_files/ULN2003-dual-cover.stl>
+[8]: <https://github.com/hunterjm/location-clock/blob/main/stl_files/mounting-bracket-base.stl>
+[9]: <https://github.com/hunterjm/location-clock/blob/main/stl_files/mounting-bracket-top.stl>
+[10]: <https://github.com/hunterjm/location-clock/blob/main/stl_files/mounting-bracket-top-threaded.stl>
+[11]: <https://github.com/hunterjm/location-clock/blob/main/stl_files/mounting-bracket-top-threaded-plug.stl>
+[12]: <https://github.com/hunterjm/location-clock/blob/main/stl_files/spur_gear_5mm.stl>
+[13]: <https://github.com/hunterjm/location-clock/blob/main/stl_files/spur-gear-1-8th.stl>
+[14]: <https://github.com/hunterjm/location-clock/blob/main/stl_files/spur-gear-5-32nd.stl>
+[15]: <https://github.com/hunterjm/location-clock/blob/main/stl_files/spur-gear-3-16th.stl>
+[16]: <https://github.com/hunterjm/location-clock/blob/main/stl_files/spur-gear-7-32.stl>
