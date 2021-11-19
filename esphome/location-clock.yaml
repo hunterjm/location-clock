@@ -8,7 +8,7 @@ esphome:
   name_add_mac_suffix: true
   project:
     name: hunterjm.location_clock
-    version: "1.0"
+    version: "1.0.0"
 
 dashboard_import:
   package_import_url: github://hunterjm/location-clock/esphome/location-clock.yaml@v1
