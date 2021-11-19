@@ -57,6 +57,7 @@ For this project, I drew inspiration from the following similar projects
 - Wood Glue
 - Spray Paint (White & Metallic Silver)
 - Hand saw w/ metal cutting blade
+- Wood saw
 - Drill & bits
 - Pick (helps remove staples)
 - (optional) Bench Grinder
@@ -89,7 +90,29 @@ is pretty self explanitory, so I will give a general overview of the steps I too
 5. The face was held on with 4 L brackets on the side of the clock. I removed it for easier access to build the mechanism.
 5. The clock face was attached with some double sided tape and pulled right off.
 6. There was a pre-existing 1/2 block of wood in the clock body that was too small and needed to be removed. It was held on with 2 staples, but no glue. I used a pick to pull the staples out.
+
+### Clock Face
+
+1. I spray painted over the aluminum clock face with flat white paint to cover the old numbers.
+2. I created a [new face](https://github.com/hunterjm/location-clock/blob/main/graphics/clock_face.svg) in Inkscape and printed it on the vinyl sticker paper.
+3. After the paint dried, I was able to apply the new face to the old aluminum one and trim it down with an exacto knife.
 ![Clock Face](static/images/face.jpg)
+
+### Motor Mechanism
+
+Here is where I didn't take nearly enough pictures, and for that I'm sorry!
+
+1. Cut your 1/2" MDF/Scrap Wood/Plywood down to size to fit inside the clock.
+2. Using the top mounting bracket as a template, drill holes through the wood for the center piece and the 4 #10 screws in the corners.
+3. Hammer in the T-Nuts to the back of the board.
+4. Cut off the heads of the 3" #10 screws and thread a nut through to fix the threads. You can use a bench grinder to clean up the cuts, but it's not necessary.
+5. Thread the cut off end through the board and into the T-Nuts.
+6. Place the top mounting bracket onto the new threaded rods and add 4 nuts.
+7. In a clockwise motion, place the motors (attached to the brackets and with the gears on) with the height of two nuts between them. The first two should be facing up, and the following two facing down for the most compact assembly. The gears on the two facing down will actually be lower than those on the motors facing up below them.
+8. Starting with the largest aluminum rod, thread it through the assembly and mark where it contacts the gear and give yourself plenty of space sticking out of the front to attach hands. Cut it with your hand saw, and clean it up with the exacto knife. **Make sure you do not bend the rod!** Verify the step smaller rod can still move freely inside.
+9. Super glue the gear to one end of the aluminum rod and finess it into the mechanism so the gears are touching.
+10. Rinse and repeat for the next 2 rods.  **Read the next line before cutting the last rod!** It's OK if things feel tight and like they aren't lining up properly. Clearances are tight. Until your rods have preassure on all 4 sides from all 4 motors, you will probably have to push and prod and pull and curse.
+11. The last rod has a place to fit into the mounting bracket base, so it will be a little longer, and the gear won't be glued on to the end. Make sure you attach the bracket base and measure from the front of the clock!
 
 [1]: <https://www.amazon.com/dp/B0718T232Z>
 [2]: <https://www.amazon.com/dp/B015RQ97W8>
