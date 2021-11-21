@@ -1,5 +1,5 @@
-A combination of reading Harry Potter with my 8 year old and her "simple machines"
-STEM lessons in school, we decided to embark on building our very own physical location clock. Already having Home Assistant setup and configured for my wife
+From a combination of reading Harry Potter with my 8 year old and her "simple machines"
+STEM lessons in school, we decided to embark on building our very own physical location clock. Already having Home Assistant set up and configured for my wife
 and I, we chose to build upon that along with ESPHome.
 
 You can follow along here to build your own.
